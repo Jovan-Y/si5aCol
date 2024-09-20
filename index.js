@@ -12,6 +12,12 @@ const server = http.createServer( (req, res) => {
     } else if(req.url === '/mahasiswa'){
         message = 'list data mahasiswa';
         data = ['jovan', 'irpan', 'aldwin'];
+    } else if(req.url === '/fakultas'){
+        message = 'list data fakultas';
+        data = ['komputer', 'biologi', 'afisika'];
+    } else if(req.url === '/prodi'){
+        message = 'list data prodi';
+        data = ['SI', 'SA', 'PDF'];
     } else{
         message = 'tidak ditemukan';
         data =[];
